@@ -8,9 +8,9 @@ pipeline{
                 sh 'source /etc/profile'
 
     sh '''
-    if [ `ps -ef | grep hcuufile-0.0.1-SNAPSHOT.jar | grep -v grep | awk '{print $2}'` ];then
+    if [ `ps -ef | grep mango-0.0.1-SNAPSHOT.jar | grep -v grep | awk '{print $2}'` ];then
 
-		ps -ef | grep  hcuufile-0.0.1-SNAPSHOT.jar  | grep -v grep | awk '{print $2}' | xargs kill -9  $2
+		ps -ef | grep  mango-0.0.1-SNAPSHOT.jar  | grep -v grep | awk '{print $2}' | xargs kill -9  $2
     fi
 '''
 
